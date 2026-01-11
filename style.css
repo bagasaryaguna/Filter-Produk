@@ -1,0 +1,79 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(120deg, #667eea, #764ba2);
+color: #333;
+}
+
+.header {
+text-align: center;
+padding: 30px;
+color: white;
+}
+
+.filter-box {
+background: white;
+padding: 20px;
+display: flex;
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.filter-box select,
+.filter-box input,
+.filter-box button {
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.filter-box button {
+background: #667eea;
+color: white;
+cursor: pointer;
+}
+
+
+.product-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 20px;
+padding: 30px;
+}
+
+
+.card {
+background: white;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+
+.card:hover {
+transform: scale(1.05);
+}
+
+
+.card img {
+width: 100%;
+height: 160px;
+object-fit: cover;
+}
+
+
+.card-content {
+padding: 15px;
+}
+
+
+.card-content h3 {
+margin: 0 0 8px;
+}
+
+
+.rating {
+color: #fbc02d;
+}
